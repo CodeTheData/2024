@@ -14,21 +14,34 @@ package Lesson4;
 //arr[i] - это элемент по индексу
 //а i - это индекс
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Exr5 {
     public static void main(String[] args) {
 
-        int[] arr = new int[6];
-
         Scanner scanner = new Scanner(System.in);
-        int a = scanner.nextInt();//индекс
-        int b = scanner.nextInt();//число
 
-        int[] arr3 = new int[arr.length + 1];
+        int num = scanner.nextInt(); // Число
+        int index = scanner.nextInt(); // Индекс
 
-        for (int i = 0; i < a; i++) {
-            arr3[i] = arr[i];
+        int[] arr = new int[] {1, 5, 20, 2, 7};
+        int[] arr1 = new int[arr.length + 1];
+
+
+        if (index < arr.length) {
+            for (int i = 0; i < index; i++) {
+                arr1[i] += arr[i];
+            }
+            arr1[index] = num;
+
+            for (int i = index; i < arr.length; i++) {
+                arr1[i + 1] = arr[i];
+            }
+
+            System.out.println(Arrays.toString(arr1));
+        } else {
+            System.out.println("Выход за рамки длинны массива!");
         }
 
     }
