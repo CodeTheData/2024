@@ -1,6 +1,9 @@
 package Lesson4;
 
 /**
+ * Проверено мной!
+ *
+ *
  * //int[] arr = new int[10];
  * //arr[0] = 12;
  * //arr[1] = 13;

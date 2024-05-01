@@ -1,6 +1,8 @@
 package Lesson4;
 
 /**
+ * Проверено мной!
+ *
  * Вставить элемент в массив .
  * С клавиатуры поступает 2 числа индекс-куда вставить и число-которое вставляешь.
  *
@@ -22,8 +24,9 @@ public class Exr5 {
 
         Scanner scanner = new Scanner(System.in);
 
-        int num = scanner.nextInt(); // Число
         int index = scanner.nextInt(); // Индекс
+        int num = scanner.nextInt(); // Число
+
 
         int[] arr = new int[] {1, 5, 20, 2, 7};
         int[] arr1 = new int[arr.length + 1];

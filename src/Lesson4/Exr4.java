@@ -7,7 +7,7 @@ package Lesson4;
 public class Exr4 {
     public static void main(String[] args) {
 
-        int[] arr = new int[6];
+        int[] arr = new int[] {3, 2, 10, 1, 9};
 
         int[] arr2 = new int[arr.length];
 
