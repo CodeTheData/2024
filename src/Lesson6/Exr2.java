@@ -9,4 +9,26 @@ package Lesson6;
  */
 
 public class Exr2 {
+    static final String VOWELS = "aeiouyAEIOUY";
+
+    public static void main(String[] args) {
+        System.out.println(getVowels("yaos bib"));
+    }
+
+    public static int getVowels(String str) {
+        int cock = 0;
+
+        if (str.isEmpty()) {
+            return cock;
+        }
+
+        for (int i = 0; i < str.length(); i++) {
+            char sym = str.charAt(i);
+            if (VOWELS.indexOf(sym) != -1) {
+                cock++;
+            }
+        }
+
+        return cock;
+    }
 }
