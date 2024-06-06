@@ -12,51 +12,24 @@ public class Exr2 {
     static final String VOWELS = "aeiouyAEIOUY";
 
     public static void main(String[] args) {
-        System.out.println(getVowels("yaos bib"));
+        System.out.println(getVowels("Ask Questhion"));
     }
 
     public static int getVowels(String str) {
-        int cock = 0;
+        int count = 0;
 
         if (str.isEmpty()) {
-            return cock;
+            return count;
         }
 
         for (int i = 0; i < str.length(); i++) {
             char sym = str.charAt(i);
             if (VOWELS.indexOf(sym) != -1) {
-                cock++;
+                count++;
             }
         }
-        return cock;
+        return count;
     }
-
-//    //static final char[] vowels = {'a', 'e', 'i', 'o', 'u', 'y'};
-//    static final String VOWELS = "aeiouyAEIOUY";
-//
-//    public static void main(String[] args) {
-//        System.out.println(getVowel("   "));
-//    }
-//
-//    public static int getVowel(String str) {
-//        int count = 0;
-//
-//        if (str.replace(" ", "").length() == 0) {
-//            return count;
-//        }
-//
-//        System.out.println(1);
-//
-//        for (int i = 0; i < str.length(); i++) {
-//            for (int j = 0; j < VOWELS.length(); j++) {
-//                if (str.charAt(i) == VOWELS.charAt(j)){
-//                    count += 1;
-//                }
-//            }
-//        }
-//        return count;
-//    }
-
 
 
 }
